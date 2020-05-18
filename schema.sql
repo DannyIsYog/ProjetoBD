@@ -1,7 +1,7 @@
 create table local_publico
   (
-   latitude varchar(40),  -- Verificar
-   longitude varchar(40), -- Verificar
+   latitude numeric(2,6),
+   longitude numeric(2,6),
    nome varchar(40),
    constraint pk_coordinates primary key(latitude, longitude),
  );

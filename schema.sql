@@ -32,7 +32,10 @@ create table item
 create table anomalia
   (
    id INT not null,
-   zona integer[4] not null,
+   x1 INT not null,
+   y1 INT not null,
+   x2 INT not null,
+   y2 INT not null,
    imagem varchar(100) not null,
    lingua varchar(20) not null,
    ts TIMESTAMP not null,
@@ -44,7 +47,10 @@ create table anomalia
 create table anomalia_traducao
   (
    id INT not null,
-   zona2 integer[4] not null,
+   x3 INT not null,
+   y3 INT not null,
+   x4 INT not null,
+   y4 INT not null,
    lingua2 varchar(20) not null,
    constraint fk_anomalia_traducao_id foreign key(id) references anomalia(id),
    constraint pk_anomalia_traducao_id primary key(id)

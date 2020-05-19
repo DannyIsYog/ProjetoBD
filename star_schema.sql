@@ -14,7 +14,7 @@ CREATE TABLE d_tempo (
   dia_da_semana varchar(45) NOT NULL,
   semana integer NOT NULL,
   mes integer NOT NULL,
-  trimestre integer NOT NULL,
+  trimestre integer NOT NULL, 
   ano integer NOT NULL
 );
 

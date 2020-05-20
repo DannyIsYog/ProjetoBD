@@ -1,12 +1,12 @@
 1.
 
-select zona, count(*)
+select x1,y1,x2,y2, count(*)
 from anomalia
-group by zona
+group by x1,y1,x2,y2
 having count(*) >= all (
 	select count(*)
 	from anomalia
-	group by zona);
+	group by x1,y1,x2,y2);
 
 2.
 

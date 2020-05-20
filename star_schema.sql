@@ -41,7 +41,7 @@ CREATE TABLE f_anomalia (
   id_tempo integer NOT NULL,
   id_local integer NOT NULL,
   id_lingua integer NOT NULL,
-  tipo_nomalia varchar(80) NOT NULL,
+  tipo_anomalia varchar(80) NOT NULL,
   com_proposta varchar(45) NOT NULL,
   constraint pk_f_anomalia_ids primary key(id_utilizador, id_tempo, id_local, id_lingua),
   constraint fk_f_anomalia_id_utilizador foreign key(id_utilizador) references d_utilizador(id_utilizador),

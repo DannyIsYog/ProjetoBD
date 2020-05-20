@@ -24,6 +24,7 @@ INSERT INTO utilizador (email, password) VALUES('w@w', 'w');
 INSERT INTO utilizador (email, password) VALUES('x@x', 'x');
 INSERT INTO utilizador (email, password) VALUES('y@y', 'y');
 INSERT INTO utilizador (email, password) VALUES('z@z', 'z');
+INSERT INTO utilizador (email, password) VALUES('ulu@ulu', 'ulu');
 
 INSERT INTO utilizador_regular (email) VALUES('a@a');
 INSERT INTO utilizador_regular (email) VALUES('b@b');
@@ -52,6 +53,7 @@ INSERT INTO utilizador_qualificado (email) VALUES('w@w');
 INSERT INTO utilizador_qualificado (email) VALUES('x@x');
 INSERT INTO utilizador_qualificado (email) VALUES('y@y');
 INSERT INTO utilizador_qualificado (email) VALUES('z@z');
+INSERT INTO utilizador_qualificado (email) VALUES('ulu@ulu');
 
 INSERT INTO local_publico (latitude, longitude, nome) VALUES (0, 0, 'aa');
 INSERT INTO local_publico (latitude, longitude, nome) VALUES (1, 11, 'bb');
@@ -79,6 +81,7 @@ INSERT INTO local_publico (latitude, longitude, nome) VALUES (22, 242, 'ww');
 INSERT INTO local_publico (latitude, longitude, nome) VALUES (23, 253, 'xx');
 INSERT INTO local_publico (latitude, longitude, nome) VALUES (24, 264, 'yy');
 INSERT INTO local_publico (latitude, longitude, nome) VALUES (25, 275, 'zz');
+INSERT INTO local_publico (latitude, longitude, nome) VALUES (-10, -10, 'ulu');
 
 INSERT INTO item (id, descricao, localizacao, latitude, longitude)VALUES(0, 'textoa', 'aa', 0, 0);
 INSERT INTO item (id, descricao, localizacao, latitude, longitude)VALUES(1, 'textob', 'bb', 1, 11);
@@ -106,25 +109,25 @@ INSERT INTO item (id, descricao, localizacao, latitude, longitude)VALUES(22, 'te
 INSERT INTO item (id, descricao, localizacao, latitude, longitude)VALUES(23, 'textox', 'xx', 23, 253);
 INSERT INTO item (id, descricao, localizacao, latitude, longitude)VALUES(24, 'textoy', 'yy', 24, 264);
 INSERT INTO item (id, descricao, localizacao, latitude, longitude)VALUES(25, 'textoz', 'zz', 25, 275);
+INSERT INTO item (id, descricao, localizacao, latitude, longitude)VALUES(26, 'textoulu', 'ulu', -10, -10);
 
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(1, 11, 1, 21, 3, 'imagema', 'linguaa', '2001-05-20', 'desca', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(2, 12, 2, 22, 4, 'imagemb', 'linguab', '2002-05-20', 'descb', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(3, 13, 3, 23, 5, 'imagemc', 'linguac', '2003-05-20', 'descc', 't');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(2, 12, 2, 22, 4, 'imagemb', 'linguab', '2002-05-20', 'descb', 'f');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(3, 13, 3, 23, 5, 'imagemc', 'linguac', '2003-05-20', 'descc', 'f');
 INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(4, 14, 4, 24, 6, 'imagemd', 'linguad', '2004-05-20', 'descd', 't');
 INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(5, 15, 5, 25, 7, 'imageme', 'linguae', '2005-05-20', 'desce', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(6, 16, 6, 26, 8, 'imagemf', 'linguaf', '2006-05-20', 'descf', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(7, 17, 7, 27, 9, 'imagemg', 'linguag', '2007-05-20', 'descg', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(8, 18, 8, 28, 10, 'imagemh', 'linguah', '2008-05-20', 'desch', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(9, 19, 9, 29, 11, 'imagemi', 'linguai', '2009-05-20', 'desci', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(10, 20, 10, 30, 12, 'imagemj', 'linguaj', '2010-05-20', 'descj', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(11, 21, 11, 31, 13, 'imagemk', 'linguak', '2011-05-20', 'desck', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(12, 22, 12, 32, 14, 'imageml', 'lingual', '2012-05-20', 'descl', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(13, 23, 13, 33, 15, 'imagemm', 'linguam', '2013-05-20', 'descm', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(14, 24, 14, 34, 16, 'imagemn', 'linguan', '2014-05-20', 'descn', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(15, 25, 15, 35, 17, 'imagemo', 'linguao', '2015-05-20', 'desco', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(16, 26, 16, 36, 18, 'imagemp', 'linguap', '2016-05-20', 'descp', 't');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(6, 16, 6, 26, 8, 'imagemf', 'linguaf', '2006-05-20', 'descf', 'f');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(7, 17, 7, 27, 9, 'imagemg', 'linguag', '2007-05-20', 'descg', 'f');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(8, 18, 8, 28, 10, 'imagemh', 'linguah', '2008-05-20', 'desch', 'f');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(9, 19, 9, 29, 11, 'imagemi', 'linguai', '2009-05-20', 'desci', 'f');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(10, 20, 10, 30, 12, 'imagemj', 'linguaj', '2010-05-20', 'descj', 'f');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(11, 21, 11, 31, 13, 'imagemk', 'linguak', '2011-05-20', 'desck', 'f');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(12, 22, 12, 32, 14, 'imageml', 'lingual', '2012-05-20', 'descl', 'f');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(13, 23, 13, 33, 15, 'imagemm', 'linguam', '2013-05-20', 'descm', 'f');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(14, 24, 14, 34, 16, 'imagemn', 'linguan', '2014-05-20', 'descn', 'f');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(15, 25, 15, 35, 17, 'imagemo', 'linguao', '2015-05-20', 'desco', 'f');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(16, 26, 16, 36, 18, 'imagemp', 'linguap', '2016-05-20', 'descp', 'f');
 INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(17, 27, 17, 37, 19, 'imagemq', 'linguaq', '2017-05-20', 'descq', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(18, 28, 18, 38, 20, 'imagemr', 'linguar', '2018-05-20', 'descr', 't');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(18, 28, 18, 38, 20, 'imagemr', 'linguar', '2018-05-20', 'descr', 'f');
 INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(19, 29, 19, 39, 21, 'imagems', 'linguas', '2019-05-20', 'descs', 't');
 INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(20, 30, 20, 40, 22, 'imagemt', 'linguat', '2020-05-20', 'desct', 't');
 INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(21, 31, 21, 41, 23, 'imagemu', 'linguau', '2021-05-20', 'descu', 't');
@@ -132,9 +135,9 @@ INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anom
 INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(23, 33, 23, 43, 25, 'imagemw', 'linguaw', '2023-05-20', 'descw', 't');
 INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(24, 34, 24, 44, 26, 'imagemx', 'linguax', '2024-05-20', 'descx', 't');
 INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(25, 35, 25, 45, 27, 'imagemy', 'linguay', '2025-05-20', 'descy', 't');
-INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(26, 36, 26, 46, 28, 'imagemz', 'linguaz', '2026-05-20', 'descz', 't');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(26, 36, 26, 46, 28, 'imagemz', 'linguaz', '2026-05-20', 'descz', 'f');
+INSERT INTO anomalia(id, x1, y1, x2, y2, imagem, lingua, ts, descricao, tem_anomalia_redacao)VALUES(27, 36, 26, 46, 28, 'imagemulu', 'linguaulu', '2020-05-20', 'descz', 'f');
 
-INSERT INTO anomalia_traducao(id, x3, y3, x4, y4, lingua2) VALUES(1, 21, 1, 31, 4, 'linguaa2');
 INSERT INTO anomalia_traducao(id, x3, y3, x4, y4, lingua2) VALUES(2, 22, 2, 32, 5, 'linguab2');
 INSERT INTO anomalia_traducao(id, x3, y3, x4, y4, lingua2) VALUES(3, 23, 3, 33, 6, 'linguac2');
 INSERT INTO anomalia_traducao(id, x3, y3, x4, y4, lingua2) VALUES(6, 26, 6, 36, 9, 'linguaf2');
@@ -150,10 +153,10 @@ INSERT INTO anomalia_traducao(id, x3, y3, x4, y4, lingua2) VALUES(15, 35, 15, 45
 INSERT INTO anomalia_traducao(id, x3, y3, x4, y4, lingua2) VALUES(16, 36, 16, 46, 19, 'linguap2');
 INSERT INTO anomalia_traducao(id, x3, y3, x4, y4, lingua2) VALUES(18, 38, 18, 48, 21, 'linguar2');
 INSERT INTO anomalia_traducao(id, x3, y3, x4, y4, lingua2) VALUES(26, 46, 26, 56, 29, 'linguaz2');
+INSERT INTO anomalia_traducao(id, x3, y3, x4, y4, lingua2) VALUES(27, 46, 26, 56, 29, 'linguaulu2');
 
 INSERT INTO duplicado(id1, id2) VALUES(1, 10);
 
-INSERT INTO incidencia(anomalia_id, item_id, email) VALUES(1,1,'a@a');
 INSERT INTO incidencia(anomalia_id, item_id, email) VALUES(2,2,'b@b');
 INSERT INTO incidencia(anomalia_id, item_id, email) VALUES(3,3,'c@c');
 INSERT INTO incidencia(anomalia_id, item_id, email) VALUES(4,4,'d@d');
@@ -179,6 +182,7 @@ INSERT INTO incidencia(anomalia_id, item_id, email) VALUES(23,23,'w@w');
 INSERT INTO incidencia(anomalia_id, item_id, email) VALUES(24,24,'x@x');
 INSERT INTO incidencia(anomalia_id, item_id, email) VALUES(25,25,'y@y');
 INSERT INTO incidencia(anomalia_id, item_id, email) VALUES(26,0,'z@z');
+INSERT INTO incidencia(anomalia_id, item_id, email) VALUES(27,26,'ulu@ulu');
 
 INSERT INTO proposta_de_correcao(email, nmr, data_hora, texto)VALUES('n@n', 1, '2020-05-15 19:09:00', 'texton');
 INSERT INTO proposta_de_correcao(email, nmr, data_hora, texto)VALUES('o@o', 1, '2020-05-16 19:09:00', 'textoo');

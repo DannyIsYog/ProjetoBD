@@ -6,7 +6,7 @@ $$
 begin
   if new.email in (Select email from utilizador_qualificado) then
     raise exception 'Este Utilizador já é um utilizador qualificado.';
-  end if
+  end if;
 
   return new;
 end;
@@ -24,7 +24,7 @@ $$
 begin
   if new.email in (Select email from utilizador_regular) then
     raise exception 'Este Utilizador já é um utilizador regular.';
-  end if
+  end if;
 
   return new;
 end;

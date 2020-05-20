@@ -1,22 +1,22 @@
 1.
 
-select x1,y1,x2,y2, count(*)
-from anomalia
-group by x1,y1,x2,y2
-having count(*) >= all (
+select latitude, longitude, count(*)
+from anomalia natural join item
+group by latitude, longitude
+having count(*) <= all (
 	select count(*)
-	from anomalia
-	group by x1,y1,x2,y2);
+	from anomalia natural join item
+	group by latitude, longitude);
 
 2.
 
-select zona, count(*)
-from anomalia natural join anomalia_traducao
+select latitude, longitude count(*)
+from anomalia natural join anomalia_traducao natural join item
 group by zona
 where ts >= '2020-01-01 00:00:00' and ts <= '2020-06-30 23:59:59'
-having count(*) <= all (
+having count(*) >= all (
 	select count(*)
-	from anomalia join anomalia_traducao
+	from anomalia natural join anomalia_traducao
 	group by zona
 	where ts >= '2020-01-01 00:00:00' and ts <= '2020-06-30 23:59:59');
 

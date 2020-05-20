@@ -18,9 +18,3 @@ from d_utilizador
 	natural join d_tempo
   natural join f_anomalia
 group by  tipo
-UNION
-select null, null, null, count(tipo_anomalia)
-from d_utilizador
-	natural join d_lingua
-	natural join d_tempo
-  natural join f_anomalia;

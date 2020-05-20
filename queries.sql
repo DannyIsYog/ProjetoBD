@@ -1,7 +1,7 @@
 1.
 
 select latitude, longitude, count(*)
-from anomalia natural join item
+from incidencia natural join item natural join anomalia
 group by latitude, longitude
 having count(*) <= all (
 	select count(*)
@@ -11,13 +11,13 @@ having count(*) <= all (
 2.
 
 select latitude, longitude count(*)
-from anomalia natural join anomalia_traducao natural join item
-group by zona
+from incidencia natural join anomalia natural join anomalia_traducao natural join item
+group by latitude, longitude
 where ts >= '2020-01-01 00:00:00' and ts <= '2020-06-30 23:59:59'
 having count(*) >= all (
 	select count(*)
-	from anomalia natural join anomalia_traducao
-	group by zona
+	from incidencia natural join anomalia natural join anomalia_traducao natural join item
+	group by latitude, longitude
 	where ts >= '2020-01-01 00:00:00' and ts <= '2020-06-30 23:59:59');
 
 

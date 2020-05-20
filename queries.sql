@@ -31,6 +31,6 @@ where latitude < 39.336775;
 
 4.
 
-select c.email
-from correcao c natural join incidencia i
-where c.email = i.email
+Select i.email
+from correcao c join incidencia i on c.anomalia_id = i.anomalia_id
+where c.email = i.email;
